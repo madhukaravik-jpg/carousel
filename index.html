@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <style>
+            html {
+                scroll-brhaviour: smooth;
+            }
+
+            /* --- CONTROL CAROUSEL & IMAGE SIZES HERE --- */
+            .carousel {
+                max-width: 800px; /* Reduces overall width of the carousel */
+                margin: 20px auto; /* Centres the carousel on the page */
+            }
+            .carousel-item img {
+                height: 350px; /* Reduces image height (change as needed) */
+                object-fit: cover; /* Prevents image distortion */
+                width: 100%; /* Fills the max-width container */
+            }
+            .section {
+                padding-top: 90px;
+                padding-bottom: 70px;
+                min-height: 800px;
+            }
+            #forest {
+                background: honeydew;
+            }
+            #ocean {
+                background: aliceblue;
+            }
+            desert {
+                background: lightyellow;
+            }
+        </style>
+    </head>
+    < data-spy="scroll" data-target="safar1Nav" data-offset="70">
+        <!-- HERO CAROUSEL -->
+        <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+        >
+            <ol class="carousel-indicatorrs">
+                <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                ></li>
+                <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                ></li>
+                <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                ></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5suH5taXi8LF4Cl19LE9QaTaf1Y9tzdeS3qeO9mQHtA&s=10"
+                        class="d-block w-100"
+                        alt="Forest Image"
+                    />
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRotdTwQkCPEdt63dG__ZMf6c6VmEG0ObYOnsojQqINqA&s=10"
+                        class="d-block w-100"
+                        alt="Ocean Image"
+                    />
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                        src="https://media.istockphoto.com/id/2180731358/photo/tropical-palm-trees-on-the-caribbean-beach-and-blue-sky-background.jpg?s=612x612&w=0&k=20&c=f5VtieSz1nUiDNovCLZEKqAwd8Y1aGKBQH8IIxavf8w="
+                        class="d-block w-100"
+                        alt="Desert Image"
+                    />
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Icons -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+
+        <!-- STICKY NAVBAR FOR SCROLLSPY -->
+        <nav id="safariNav" class="navbar navbar-expand-sn navbar-dark bg-dark sticky-top">
+            <span class="navbar-brand">safari guide</span>
+            <ul class="navbar-nav nr-auto">
+             <li class="nav-item"><a class="nav-link" href="#forest">Forest</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ocean">Ocean</a></li>
+       <li class="nav-item"><a class="nav-link" href="#desert">Desert</a></li>   
+            </ul>
+        </nav>
+
+        <!-- CONTENT SECTIONS -->
+        <div class="container-fluid p-0">
+            <div id="forest" class="section px-4">
+               <div class="container">
+                  <h2> Forest safari</h2> 
+                  <p>Explore tall trees and discover tigers, elephnts, and monkeys!</p>
+               </div> 
+            </div>
+            <div id="ocean" class="section px-4">
+                <div class="container">
+                  <h2> Ocean safari</h2> 
+                 <p>Dive deep and meet dolphins, sharks, and colourful clownfish!</p> 
+                </div>
+            </div>
+            <div id="desert" class="section px-4">
+               <div class="container">
+                   <h2> Desert safari</h2>
+                   <p>Trek across the sand dunes and spot camels, lizards, and desert foxes!</p>
+               </div> 
+            </div>
+        </div>
+
+        <!-- REQUIRED DEPENDECIES FOR BOOTSTRAP 4 -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>   
+    </body>
+</html>
